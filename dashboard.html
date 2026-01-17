@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow | Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f4f6f8;
+  display:flex;
+}
+
+.sidebar{
+  width:220px;
+  background:#1f2933;
+  color:#fff;
+  padding:20px;
+}
+
+.sidebar ul{
+  padding:0;
+}
+
+.sidebar li{
+  list-style:none;
+  padding:12px;
+  border-radius:6px;
+  margin-bottom:6px;
+}
+
+.sidebar li a{
+  color:#fff;
+  text-decoration:none;
+  display:block;
+}
+
+.sidebar li.active,
+.sidebar li:hover{
+  background:#374151;
+}
+
+.main{
+  flex:1;
+  padding:30px;
+}
+
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<aside class="sidebar">
+  <h2>TaskFlow</h2>
+  <ul>
+    <li class="active">
+      <a href="dashboard.html">Dashboard</a>
+    </li>
+    <li>
+      <a href="tasks.html">Tasks</a>
+    </li>
+    <li>
+      <a href="workflow.html">Workflow</a>
+    </li>
+    <li>
+      <a href="reports.html">Reports</a>
+    </li>
+    <li>
+      <a href="settings.html">Settings</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="main">
+  <h1>Dashboard</h1>
+  <p>Overview of your workflow</p>
+
+  <div class="card">
+    Total Tasks: <strong>12</strong>
+  </div>
+
+  <div class="card">
+    Completed Tasks: <strong>5</strong>
+  </div>
+</div>
+
+<script>
+console.log("Dashboard loaded");
+</script>
+
+</body>
+</html>
