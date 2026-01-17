@@ -14,7 +14,7 @@
 }
 
 body{
-  background:#f4f6f8;
+  background:#b6d9fb;
   color:#1f2933;
 }
 
@@ -55,7 +55,7 @@ nav ul li a:hover{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:40px;
-  align-items:center;
+  align-items:start;
 }
 
 .hero-text h1{
@@ -78,6 +78,7 @@ nav ul li a:hover{
   font-size:16px;
   cursor:pointer;
   transition: background 0.3s;
+  margin-bottom:30px;
 }
 
 .hero-text button:hover{
@@ -86,9 +87,18 @@ nav ul li a:hover{
 
 .hero-box{
   background:#ffffff;
-  padding:30px;
+  padding:25px;
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-box h3{
+  margin-bottom:15px;
+}
+
+/* Right empty space (optional visual balance) */
+.hero-image{
+  min-height:300px;
 }
 
 /* Features */
@@ -154,22 +164,30 @@ footer{
 
 <!-- Hero Section -->
 <section class="hero">
+
+  <!-- LEFT SIDE -->
   <div class="hero-text">
     <h1>Organize Work. Track Progress. Achieve More.</h1>
     <p>
       TaskFlow is a modern task and workflow management system designed to help
       teams plan, track, and complete work efficiently.
     </p>
+
     <button onclick="goToLogin()">Get Started</button>
+
+    <!-- HERO BOX MOVED BELOW BUTTON -->
+    <div class="hero-box">
+      <h3>Why TaskFlow?</h3>
+      <p>✔ Simple task tracking</p>
+      <p>✔ Visual workflow management</p>
+      <p>✔ Team-friendly dashboard</p>
+      <p>✔ Cloud-ready deployment</p>
+    </div>
   </div>
 
-  <div class="hero-box">
-    <h3>Why TaskFlow?</h3>
-    <p>✔ Simple task tracking</p>
-    <p>✔ Visual workflow management</p>
-    <p>✔ Team-friendly dashboard</p>
-    <p>✔ Cloud-ready deployment</p>
-  </div>
+  <!-- RIGHT SIDE (EMPTY / FUTURE IMAGE) -->
+  <div class="hero-image"></div>
+
 </section>
 
 <!-- Features Section -->
@@ -206,10 +224,8 @@ footer{
 
 <script>
 function goToLogin(){
-  window.location.href = "login.html"; // Redirect to login page
+  window.location.href = "login.html";
 }
-
-console.log("TaskFlow Home Page Loaded");
 </script>
 
 </body>
