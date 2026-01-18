@@ -35,7 +35,11 @@ TaskFlow is a simple SaaS-style task management web application that allows user
 - Configured GitHub Actions CI/CD pipeline
 - Managed cloud deployment
 
+<<<<<<< HEAD
 ### CI trigger update
+=======
+Trigger CI workflow
+>>>>>>> 38e9a956c1a09f1ff74050f54bda159bae1a22ff
 
 
 
