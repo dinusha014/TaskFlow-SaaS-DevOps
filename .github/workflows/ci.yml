@@ -6,11 +6,13 @@ on:
       - master
       - main
       - develop
+      - feature/devops
   pull_request:
     branches:
       - master
       - main
       - develop
+      - feature/devops
 
 jobs:
   build:
